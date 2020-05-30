@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import HttpResponse
 
-# Create your views here.
+# Página index
+def index(request):
+    return HttpResponse("It's Work!")
+
+# Verifica que el servicio este corriendo
+def health(request):
+    return HttpResponse("Ok")
