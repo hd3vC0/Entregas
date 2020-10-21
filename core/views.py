@@ -1,4 +1,5 @@
 from django.shortcuts import HttpResponse
+from django.contrib import admin
 
 # Página index
 def index(request):
